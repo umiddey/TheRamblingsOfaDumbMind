@@ -1,0 +1,5 @@
+git remote -v #to see for origin links
+git remote remove # to remove them
+git remote add origin <link>
+
+when prompted for password, use access token key instead.
