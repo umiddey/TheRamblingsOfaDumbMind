@@ -1,0 +1,13 @@
+SELECT 
+	<colname>, 
+	COUNT(*)
+FROM (
+	SELECT <grouped_colnames>
+	FROM <tablename>
+	GROUP BY <cols>
+) T
+
+GROUP BY 
+-- Group by basically groups the data based on the column and the COUNT(*)
+-- counts how many repetitions of the grouped column exists, i.e. the count 
+-- of the column.
