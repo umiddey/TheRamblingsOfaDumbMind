@@ -1,0 +1,22 @@
+data "aws_iam_policy_document" "role_policy" {
+
+  statement {
+
+    sid = ""
+    effect = "Allow"
+
+    principals {
+      identifiers = ["lambda.amazonaws.com"]
+      type = "Service"
+    }
+
+    actions = ["sts:AssumeRole"]
+
+  }
+
+}
+
+
+# This is used to assign a role to the user, which in this case, 
+# AWS Lambda. Need separate IAM policy to define what it can access.
+# To 
