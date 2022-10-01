@@ -1,0 +1,6 @@
+- First, commit and push changes to branch. 
+- Then:
+
+git checkout master
+git merge <branch-name> -m "<commit-message>"
+git push
