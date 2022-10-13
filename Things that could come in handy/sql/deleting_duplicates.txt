@@ -1,0 +1,12 @@
+WITH CTE AS (
+
+	SELECT <colnames>      
+           ROW_NUMBER() OVER(
+		PARTITION BY  <columns to partition by, usually every single one in case of duplicates>
+     
+           ORDER BY  <columns to order by, usually every single one in case of duplicates>
+           ) AS DuplicateCount
+    FROM [Tableau].[dbo].[RAD_NewCustomer_Calculated_IS_DE])
+DELETE
+FROM CTE
+WHERE DuplicateCount >1

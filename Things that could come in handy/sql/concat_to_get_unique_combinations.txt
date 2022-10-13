@@ -1,0 +1,3 @@
+SELECT
+	COUNT(DISTINCT colname1 || colname2 || colname3 || conditions like CASE WHENs also allowed) as click_u
+FROM corpdev.tmp_b2b_clicks_de cl

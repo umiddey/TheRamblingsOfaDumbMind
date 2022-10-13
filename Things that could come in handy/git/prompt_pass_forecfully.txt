@@ -1,0 +1,1 @@
+just add -v after git push or pull statement

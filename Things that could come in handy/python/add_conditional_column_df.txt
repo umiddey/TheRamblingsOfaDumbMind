@@ -1,0 +1,4 @@
+df = df2.loc[<condition>, <columns that are needed>].reset_index(drop = True)
+
+example:
+df = df2.loc[df2['col'] == 'value', ['col2', 'col3']].reset_index(drop = True)
